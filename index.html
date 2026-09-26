@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="hero-group">
+
+    <img src="Images/testitle.png"
+         alt="My Portfolio"
+         class="my-portfolio-title">
+
+    <div class="button-container" id="mainNav">
+
+        <a href="index.html" class="nav-title">
+            <img src="Images/testitle.png"
+                 alt="My Portfolio"
+                 class="portfolio-title-nav">
+        </a>
+
+        <div class="nav-buttons">
+            <a href="#projects">Works</a>
+            <a href="about.html#about">About Me</a>
+            <a href="about.html#contact">Contact</a>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="projects-section" id="projects">
+
+    <div class="search-panel">
+
+        <input
+            type="text"
+            id="folderSearch"
+            placeholder="Search projects..."
+            autocomplete="off">
+
+    </div>
+
+    <div class="project-container">
+
+        <div class="project-tabs">
+
+            <div class="category-buttons">
+
+                <button class="active" data-category="all">
+                    All
+                </button>
+
+                <button data-category="exam">
+                    Exams
+                </button>
+
+                <button data-category="activity">
+                    Activities
+                </button>
+
+                <button data-category="quiz">
+                    Quizzes
+                </button>
+
+                <button data-category="project">
+                    Projects
+                </button>
+
+            </div>
+
+            <div class="category-dropdown">
+
+                <button
+                    type="button"
+                    class="category-dropdown-toggle"
+                    id="categoryDropdownToggle"
+                    aria-expanded="false">
+
+                    <span id="categoryDropdownText">All</span>
+
+                    <span class="dropdown-arrow">▾</span>
+
+                </button>
+
+                <div
+                    class="category-dropdown-menu"
+                    id="categoryDropdownMenu">
+
+                    <button type="button" data-category="all">
+                        All
+                    </button>
+
+                    <button type="button" data-category="exam">
+                        Exams
+                    </button>
+
+                    <button type="button" data-category="activity">
+                        Activities
+                    </button>
+
+                    <button type="button" data-category="quiz">
+                        Quizzes
+                    </button>
+
+                    <button type="button" data-category="project">
+                        Projects
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="activities" id="projects-list">
+
+            <div class="activity" data-category="activity">
+
+                <button
+                    class="folder-btn"
+                    type="button"
+                    aria-label="Open Activity 1"
+                    onclick="window.open('https://drive.google.com/drive/folders/11ZXwkdeHY6MhL9eLUazw1obh3lwFYNVW?usp=sharing', '_blank')">
+
+                    <img
+                        class="closed-icon"
+                        src="Images/Folder closed.png"
+                        alt="Folder closed">
+
+                    <img
+                        class="open-icon"
+                        src="Images/Folder Open.png"
+                        alt="Folder open">
+
+                </button>
+
+                <p>Activity 1</p>
+
+            </div>
+
+
+            <div class="activity" data-category="activity">
+
+                <button
+                    class="folder-btn"
+                    type="button"
+                    aria-label="Open Activity 2"
+                    onclick="window.open('https://drive.google.com/drive/folders/1ySaG5RCWI0NKD21q2qg1OgBBPrwzAW6T?usp=sharing', '_blank')">
+
+                    <img
+                        class="closed-icon"
+                        src="Images/Folder closed.png"
+                        alt="Folder closed">
+
+                    <img
+                        class="open-icon"
+                        src="Images/Folder Open.png"
+                        alt="Folder open">
+
+                </button>
+
+                <p>Activity 2</p>
+
+            </div>
+
+<!--
+
+            <div class="activity" data-category="activity">
+
+                <button
+                    class="folder-btn"
+                    type="button"
+                    aria-label="Open Activity 3"
+                    onclick="openEmptyMessage()">
+
+                    <img
+                        class="closed-icon"
+                        src="Images/Folder closed.png"
+                        alt="Folder closed">
+
+                    <img
+                        class="open-icon"
+                        src="Images/Folder Open.png"
+                        alt="Folder open">
+
+                </button>
+
+                <p>Activity 3</p>
+
+            </div>
+
+
+            <div class="activity" data-category="activity">
+
+                <button
+                    class="folder-btn"
+                    type="button"
+                    aria-label="Open Activity 4"
+                    onclick="openEmptyMessage()">
+
+                    <img
+                        class="closed-icon"
+                        src="Images/Folder closed.png"
+                        alt="Folder closed">
+
+                    <img
+                        class="open-icon"
+                        src="Images/Folder Open.png"
+                        alt="Folder open">
+
+                </button>
+
+                <p>Activity 4</p>
+
+            </div>
+
+
+            <div class="activity" data-category="activity">
+
+                <button
+                    class="folder-btn"
+                    type="button"
+                    aria-label="Open Activity 5"
+                    onclick="openEmptyMessage()">
+
+                    <img
+                        class="closed-icon"
+                        src="Images/Folder closed.png"
+                        alt="Folder closed">
+
+                    <img
+                        class="open-icon"
+                        src="Images/Folder Open.png"
+                        alt="Folder open">
+
+                </button>
+
+                <p>Activity 5</p>
+
+            </div>
+
+
+            <div class="activity" data-category="activity">
+
+                <button
+                    class="folder-btn"
+                    type="button"
+                    aria-label="Open Activity 6"
+                    onclick="openEmptyMessage()">
+
+                    <img
+                        class="closed-icon"
+                        src="Images/Folder closed.png"
+                        alt="Folder closed">
+
+                    <img
+                        class="open-icon"
+                        src="Images/Folder Open.png"
+                        alt="Folder open">
+
+                </button>
+
+                <p>Activity 6</p>
+
+            </div>
+
+-->
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

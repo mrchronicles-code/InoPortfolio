@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Me</title>
+    <link rel="stylesheet" href="about.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="hero-group">
+
+        <img src="Images/testitle.png"
+             alt="My Portfolio"
+             class="my-portfolio-title">
+
+        <div class="button-container" id="mainNav">
+
+            <a href="index.html" class="nav-title">
+                <img src="Images/testitle.png"
+                     alt="My Portfolio"
+                     class="portfolio-title-nav">
+            </a>
+
+            <div class="nav-buttons">
+
+                <a href="index.html?scroll=projects">Works</a>
+
+                <a href="about.html">About Me</a>
+
+                <a href="about.html#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <main class="about-page" id="about">
+
+        <div class="id-card">
+
+            <div class="id-profile">
+
+                <img src="Images/pic.png"
+                     alt="My Profile Picture"
+                     class="profile-picture">
+
+            </div>
+
+
+            <div class="id-info">
+
+                <h1>Hi! I'm Hanah</h1>
+
+                <div class="about-description">
+
+                    <p>
+                        I’m an aspiring Web Developer and Graphic Designer studying at Cavite State University – Silang Campus! My journey started in 2022 with a love for drawing and design, which led me right into the world of coding. Now, I'm having so much fun using code to bring my art to life on the web! I'm constantly learning, trying out new ideas, and growing my skills every single day.
+                    </p>
+
+                </div>
+
+
+                <div class="skills-section">
+
+                    <h2>Skills/Softwares</h2>
+
+                    <div class="skills">
+
+                        <img src="Images/psd.png" alt="Photoshop">
+
+                        <img src="Images/vscode.png" alt="VS Code">
+
+                        <img src="Images/ibispaint.png" alt="IbisPaint">
+
+                        <img src="Images/figma.png" alt="Figma">
+
+                        <img src="Images/canva.png" alt="Canva">
+
+                        <img src="Images/inkscape.png" alt="Inkscape">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <section class="contact-section" id="contact">
+
+        <div class="contact-card">
+
+            <h1>Contact Me</h1>
+
+            <form id="contactForm">
+
+                <div class="contact-field">
+
+                    <label for="contactName">Name</label>
+
+                    <input
+                        type="text"
+                        id="contactName"
+                        name="name"
+                        placeholder="Your name"
+                        required>
+
+                </div>
+
+
+                <div class="contact-field">
+
+                    <label for="contactEmail">Email</label>
+
+                    <input
+                        type="email"
+                        id="contactEmail"
+                        name="email"
+                        placeholder="Your email"
+                        required>
+
+                </div>
+
+
+                <div class="contact-field">
+
+                    <label for="contactMessage">Message</label>
+
+                    <textarea
+                        id="contactMessage"
+                        name="message"
+                        placeholder="Write your message..."
+                        required></textarea>
+
+                </div>
+
+
+                <button type="submit" class="submit-button">
+                    Submit
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <script src="about.js"></script>
+
+</body>
+
+</html>
